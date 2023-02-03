@@ -7,7 +7,7 @@
     "url": "git+https://github.com/jahyunkoo94/wetube-reloaded.git"
   },
   "scripts": {
-    "win": "node index.js"
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "author": "Jahyun Koo<koojh1017@naver.com>",
   "license": "ISC",
@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
-    "@babel/preset-env": "^7.20.2"
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.20"
   }
 }
