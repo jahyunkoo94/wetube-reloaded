@@ -21,6 +21,10 @@ app.use(
   })
 );
 
+app.get("/add-one", (req, res, ext) => {
+  return res.send(`${res.session.id}`);
+});
+
 app.use("/", rootRouter);
 app.use("/videos", videoRouter);
 app.use("/users", userRouter);
