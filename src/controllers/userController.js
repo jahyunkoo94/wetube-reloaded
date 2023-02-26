@@ -91,7 +91,7 @@ export const finishGithubLogin = async (req, res) => {
 
   if ("access_token" in tokenRequest) {
     const { access_token } = tokenRequest;
-    const userRequest = await (
+    const userData = await (
       await fetch("https://api.github.com/user", {
         headers: {
           Authorization: `token ${access_token}`,
